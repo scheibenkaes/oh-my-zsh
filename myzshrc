@@ -33,13 +33,8 @@ source "$HOME/.oh-my-zsh/init.zsh"
 
 # Customize to your needs...
 
-[[ "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-export CLOJURESCRIPT_HOME=~/Code/clojurescript
-export PATH=$PATH:~/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin
+export CLOJURESCRIPT_HOME=$HOME/Code/clojurescript
+export PATH=$PATH:$HOME/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin
 export AGNER_INSTALL_PREFIX=/Users/b6n/.agner_install
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
 
