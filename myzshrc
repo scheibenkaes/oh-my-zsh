@@ -37,4 +37,5 @@ export CLOJURESCRIPT_HOME=$HOME/Code/clojurescript
 export PATH=$PATH:$HOME/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin
 export AGNER_INSTALL_PREFIX=/Users/b6n/.agner_install
 
-
+autoload -U compinit
+compinit
