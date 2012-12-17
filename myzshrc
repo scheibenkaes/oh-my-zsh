@@ -34,8 +34,15 @@ source "$HOME/.oh-my-zsh/init.zsh"
 # Customize to your needs...
 
 export CLOJURESCRIPT_HOME=$HOME/Code/clojurescript
-export PATH=$PATH:$HOME/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin
+export PATH=$PATH:$HOME/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin:~/android-sdks/tools:~/android-sdks/platform-tools
 export AGNER_INSTALL_PREFIX=/Users/b6n/.agner_install
+
+#export PROMPT="%*: %~ > "
 
 autoload -U compinit
 compinit
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+
+export NODE_PATH=/usr/local/lib/node_modules
+
